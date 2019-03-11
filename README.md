@@ -25,6 +25,35 @@ We ran a test on a MAC Pro i7 2017. We ran the library 100 times and got the ave
 
 So our pure Python code cannot compete with C based libraries, but it's `6x faster` to verify and `23x faster` to sign then other pure Python libraries.
 
+### How to install
+
+Firstly, create a python3 or python2.7 virtual environment using virtualenv:
+
+```bash
+virtualenv -p python3 venv
+source venv/bin/activate
+```
+
+or if you are using python2.7:
+ 
+ ```bash
+virtualenv -p python2.7 venv
+source venv/bin/activate
+```
+ 
+Install using pip:
+
+```bash
+pip install starkbank-ecdsa
+```
+
+or you can also install using python installer:
+
+```bash
+python setup.py install
+```
+
+
 ### Sample Code
 
 How sign a json message for [Stark Bank]:
@@ -152,11 +181,7 @@ print(signature.toBase64())
 
 [Stark Bank]: https://starkbank.com
 
-### How to install
 
-```
-pip install starkbank-ecdsa
-```
 
 ### Run all unit tests
 
